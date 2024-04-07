@@ -26,39 +26,19 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+        
+    int start, end;
     
+    
+    cout << "¬вед≥ть початок ≥ к≥нець: "; cin >> start >> end;
 
-    srand(time(nullptr));
+    int sum = start;
 
-    int gess;
-
-    int r_num = 1 + rand() % 12;
-
-    cout << "¬вед≥ть чисало в≥д 1 до 12: "; cin >> gess;
-
-    (gess == r_num) ? cout << "¬и вгадали ваше число " << endl : cout << "“и лох!" << endl;
-
-    switch (r_num) {
-        case 1: cout << RED << "1" << WHITE << endl; break;
-        case 2: cout << GREEN << "2" << WHITE << endl; break;
-        case 3: cout << BLUE << "3" << WHITE << endl; break;
-        case 4: cout << YELLOW << "4" << WHITE << endl; break;
-        case 5: cout << CYAN << "5" << WHITE << endl; break;
-        case 6: cout << ORANGE << "6" << WHITE << endl; break;
-        case 7: cout << PURPLE << "7" << WHITE << endl; break;
-        case 8: cout << WHITE << "8" << WHITE << endl; break;
-        case 9: cout << GREY << "9" << WHITE << endl; break;
-        case 10: cout << GREY << "10" << WHITE << endl; break;
-        case 11: cout << PINK << "11" << PINK << endl; break;
-        case 12: cout << BLACK << "12" << BLACK << endl; break;
-    }
+    for (int counter = start; counter < end + 1; counter++)
+        sum += counter;
+    cout << sum;
 
 
-
-
-
-
+         
     return 0;
-
-
 }

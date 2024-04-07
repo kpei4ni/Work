@@ -11,17 +11,15 @@ int main()
     SetConsoleOutputCP(1251);
 
     int number;
-    int sum = 0;
+    int factorial = 1;
 
     cout << "¬веди число: "; cin >> number;
 
-    for (int i = 0; i < number; i++) {
-        
-            if (i % 2 != 0){ 
-                sum += i;
-            }
+    for (int i = 1; i < number + 1; i++) {
+        factorial *= i;
     }
-    cout << sum;
-         
+
+    cout << factorial;
+
     return 0;
 }

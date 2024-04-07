@@ -26,14 +26,16 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-        
+
     int number = 1;
     int counter = 0;
 
-    while (number != 0) {
+    do {
         cout << "¬вед≥ть число: "; cin >> number;
+        if (number == 0) break;
         counter++;
-    }
+    } while (number != 0);
+
 
     cout << "Ѕуло введено " << counter << " „исел";
 

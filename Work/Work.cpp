@@ -10,16 +10,18 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    string symbol;
-    int amount;
+    int number;
+    int sum = 0;
 
-    cout << "—имвол: "; cin >> symbol;
+    cout << "¬веди число: "; cin >> number;
 
-    cout << "¬веди к≥льк≥сть символ≥в: "; cin >> amount;
-
-    for (int i = 0; i < amount; i++) {
-        cout << symbol;
+    for (int i = 0; i < number; i++) {
+        
+            if (i % 2 != 0){ 
+                sum += i;
+            }
     }
+    cout << sum;
          
     return 0;
 }

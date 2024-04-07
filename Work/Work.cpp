@@ -27,17 +27,15 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
         
-    int start, end;
-    
-    
-    cout << "¬вед≥ть початок ≥ к≥нець: "; cin >> start >> end;
+    int number = 1;
+    int counter = 0;
 
-    int sum = start;
+    while (number != 0) {
+        cout << "¬вед≥ть число: "; cin >> number;
+        counter++;
+    }
 
-    for (int counter = start; counter < end + 1; counter++)
-        sum += counter;
-    cout << sum;
-
+    cout << "Ѕуло введено " << counter << " „исел";
 
          
     return 0;

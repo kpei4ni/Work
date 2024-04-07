@@ -1,30 +1,44 @@
 #include <iostream>
+#include <cmath>
+#include <ctime> 
+#include <CoreWindow.h> 
 #include <Windows.h>
+
 using namespace std;
 
 enum Bill {
-    franko = 20,
-    grushevskiy = 50,
-    shevchenko = 100,
-    ukrainka = 200,
-    skovoroda = 500,
-    vernadskiy = 1000
+    
 };
 
 int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+    
 
-    string answer;
+    srand(time(nullptr));
 
-    cout << "яке пр≥звище вас ц≥кавить? " << endl; cin >> answer;
+    int num1 = 1 + rand() % 10;
 
-    Bill legend;
+    cout << num1 << endl;
 
-    (answer == "”крањнка") ? legend = ukrainka : (answer == "—коворода") ? legend = skovoroda : legend = vernadskiy;
+    cout << "" << endl;
 
-    cout << "Ѕанкнота з " << answer << " ном≥налом " << legend << endl;
+    int num2 = -5 + rand() % 11;
+
+    cout << num2 << endl;
+
+    cout << "" << endl;
+
+    int num3 = rand() % 2;
+
+    cout << num3 << endl;
+
+
+
+
+
+    return 0;
 
 
 }

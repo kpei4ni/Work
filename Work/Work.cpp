@@ -10,16 +10,20 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    int number;
-    int factorial = 1;
+    int length_cotton;
+    int length_pillow;
+    int counter = 0;
 
-    cout << "¬веди число: "; cin >> number;
+    cout << "¬веди число: "; cin >> length_cotton;
+    cout << "¬веди число: "; cin >> length_pillow;
 
-    for (int i = 1; i < number + 1; i++) {
-        factorial *= i;
+    while (length_cotton > length_pillow) {
+        length_cotton -= length_pillow;
+        counter += 1;
     }
 
-    cout << factorial;
+    cout << counter << endl;
+
 
     return 0;
 }

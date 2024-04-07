@@ -10,19 +10,20 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    int length_cotton;
-    int length_pillow;
-    int counter = 0;
+    int count_of_creat_of_beer;
+    int count_of_creat_of_beer_in_cars;
+    int count_of_cars = 0;
 
-    cout << "¬веди число: "; cin >> length_cotton;
-    cout << "¬веди число: "; cin >> length_pillow;
+    cout << "¬вед≥ть число: "; cin >> count_of_creat_of_beer;
+    
 
-    while (length_cotton > length_pillow) {
-        length_cotton -= length_pillow;
-        counter += 1;
-    }
+    do {
+        cout << "¬вед≥ть число: "; cin >> count_of_creat_of_beer_in_cars;
+        count_of_creat_of_beer -= count_of_creat_of_beer_in_cars;
+        count_of_cars++;
+    } while (count_of_creat_of_beer > 0);
 
-    cout << counter << endl;
+    cout << count_of_cars;
 
 
     return 0;
